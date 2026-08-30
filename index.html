@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,56 +13,35 @@
             --card-bg: #FFFFFF;
             --border: #E2E8F0;
         }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: var(--bg-page);
             color: var(--text-main);
             padding: 40px 20px;
         }
-
         .container {
             max-width: 960px;
             margin: 0 auto;
             background: var(--card-bg);
             padding: 40px;
             border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
             border: 1px solid var(--border);
         }
-
-        h1 {
-            font-size: 26px;
-            font-weight: 800;
-            margin-bottom: 8px;
-        }
-
-        p {
-            color: var(--text-muted);
-            font-size: 15px;
-            margin-bottom: 24px;
-        }
-
+        h1 { font-size: 26px; font-weight: 800; margin-bottom: 8px; }
+        p { color: var(--text-muted); font-size: 15px; margin-bottom: 24px; }
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 16px;
         }
-
-        th,
-        td {
+        th, td {
             text-align: left;
             padding: 14px 16px;
             border-bottom: 1px solid var(--border);
             font-size: 14px;
         }
-
         th {
             background: #F1F5F9;
             color: #475569;
@@ -72,7 +50,6 @@
             font-size: 12px;
             letter-spacing: 0.5px;
         }
-
         .category-badge {
             display: inline-block;
             background: #EFF6FF;
@@ -82,17 +59,12 @@
             font-size: 12px;
             font-weight: 600;
         }
-
         .view-link {
             color: var(--primary);
             text-decoration: none;
             font-weight: 600;
         }
-
-        .view-link:hover {
-            text-decoration: underline;
-        }
-
+        .view-link:hover { text-decoration: underline; }
         .copy-btn {
             background: #0F172A;
             color: #FFF;
@@ -104,18 +76,13 @@
             cursor: pointer;
             transition: all 0.2s;
         }
-
-        .copy-btn:hover {
-            background: #1E293B;
-        }
-
+        .copy-btn:hover { background: #1E293B; }
         .footer {
             margin-top: 36px;
             text-align: center;
             font-size: 13px;
             color: var(--text-muted);
         }
-
         code {
             background: #F1F5F9;
             padding: 2px 6px;
@@ -125,114 +92,166 @@
         }
     </style>
 </head>
-
 <body>
-    <div class="container">
-        <h1>🛡️ Google Play Privacy Policy Directory</h1>
-        <p>Official Privacy Policy repository for Nusantara Mobile Studio. Host this directory on GitHub Pages or custom
-            domain.</p>
+<div class="container">
+    <h1>🛡️ Google Play Privacy Policy Directory</h1>
+    <p>Official Privacy Policy repository for Nusantara Mobile Studio. Host this directory on GitHub Pages or custom domain.</p>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>App Name</th>
-                    <th>Package Name</th>
-                    <th>Category</th>
-                    <th>Privacy Policy</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
+    <table>
+        <thead>
+            <tr>
+                <th>App Name</th>
+                <th>Package Name</th>
+                <th>Category</th>
+                <th>Privacy Policy</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        <tr>
+            <td><strong>Badminton Smash Indonesia</strong></td>
+            <td><code>com.badminton.smash</code></td>
+            <td><span class="category-badge">Casual Arcade Game</span></td>
+            <td><a href="badminton.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('badminton.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Ojek Racer Indonesia</strong></td>
+            <td><code>com.ojekracer.game</code></td>
+            <td><span class="category-badge">Racing Arcade Game</span></td>
+            <td><a href="ojek-racer.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('ojek-racer.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Simulasi KPR & Finansial</strong></td>
+            <td><code>com.kpr.simulasi</code></td>
+            <td><span class="category-badge">Finance & Productivity</span></td>
+            <td><a href="simulasi-kpr.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('simulasi-kpr.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Hafalan Quran Tracker</strong></td>
+            <td><code>com.hafalan.quran</code></td>
+            <td><span class="category-badge">Education & Religion</span></td>
+            <td><a href="hafalan-quran.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('hafalan-quran.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Batik Nusantara Guide</strong></td>
+            <td><code>com.batik.nusantara</code></td>
+            <td><span class="category-badge">Lifestyle & Culture</span></td>
+            <td><a href="batik-nusantara.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('batik-nusantara.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Waroeng Ayam Tycoon</strong></td>
+            <td><code>com.waroeng.ayam</code></td>
+            <td><span class="category-badge">Casual Simulation Game</span></td>
+            <td><a href="waroeng-ayam.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('waroeng-ayam.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Word Connect Nusantara</strong></td>
+            <td><code>com.wordconnect.nusantara</code></td>
+            <td><span class="category-badge">Word Puzzle Game</span></td>
+            <td><a href="word-connect.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('word-connect.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Kalkulator Bunga Majemuk (Compounding)</strong></td>
+            <td><code>com.compounding.calculator</code></td>
+            <td><span class="category-badge">Finance & Tools</span></td>
+            <td><a href="app-compounding.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('app-compounding.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>HitungYuk - Kalkulator Belanja</strong></td>
+            <td><code>com.hitungyuk.app</code></td>
+            <td><span class="category-badge">Finance & Shopping Tools</span></td>
+            <td><a href="hitungyuk.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('hitungyuk.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Nusantara Mobile Studio (Companion App)</strong></td>
+            <td><code>com.nusantara.mobilestudio</code></td>
+            <td><span class="category-badge">Productivity & Portfolio Showcase</span></td>
+            <td><a href="nusantara-mobile-studio.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('nusantara-mobile-studio.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>FocusFlow Pomodoro & Task</strong></td>
+            <td><code>com.nusantara.focusflow</code></td>
+            <td><span class="category-badge">Tools & Productivity</span></td>
+            <td><a href="focusflow.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('focusflow.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>BudgetWise Expense Tracker</strong></td>
+            <td><code>com.nusantara.budgetwise</code></td>
+            <td><span class="category-badge">Finance & Budgeting</span></td>
+            <td><a href="budgetwise.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('budgetwise.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>ZenPulse Breath & Habit</strong></td>
+            <td><code>com.nusantara.zenpulse</code></td>
+            <td><span class="category-badge">Health & Mindfulness</span></td>
+            <td><a href="zenpulse.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('zenpulse.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Pixel Odyssey: Void Runner</strong></td>
+            <td><code>com.nusantara.pixelodyssey</code></td>
+            <td><span class="category-badge">Arcade & Action Game</span></td>
+            <td><a href="pixel-odyssey.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('pixel-odyssey.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Aksara: Interactive Nusantara</strong></td>
+            <td><code>com.nusantara.aksara</code></td>
+            <td><span class="category-badge">Education & Culture</span></td>
+            <td><a href="aksara.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('aksara.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>VibeJournal Mood & Routine</strong></td>
+            <td><code>com.nusantara.vibejournal</code></td>
+            <td><span class="category-badge">Lifestyle & Wellness</span></td>
+            <td><a href="vibejournal.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('vibejournal.html')">Copy URL</button></td>
+        </tr>
+        
+        </tbody>
+    </table>
 
-                <tr>
-                    <td><strong>Badminton Smash Indonesia</strong></td>
-                    <td><code>com.badminton.smash</code></td>
-                    <td><span class="category-badge">Casual Arcade Game</span></td>
-                    <td><a href="badminton.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                    <td><button class="copy-btn" onclick="copyUrl('badminton.html')">Copy URL</button></td>
-                </tr>
-
-                <tr>
-                    <td><strong>Ojek Racer Indonesia</strong></td>
-                    <td><code>com.ojekracer.game</code></td>
-                    <td><span class="category-badge">Racing Arcade Game</span></td>
-                    <td><a href="ojek-racer.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                    <td><button class="copy-btn" onclick="copyUrl('ojek-racer.html')">Copy URL</button></td>
-                </tr>
-
-                <tr>
-                    <td><strong>Simulasi KPR & Finansial</strong></td>
-                    <td><code>com.kpr.simulasi</code></td>
-                    <td><span class="category-badge">Finance & Productivity</span></td>
-                    <td><a href="simulasi-kpr.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                    <td><button class="copy-btn" onclick="copyUrl('simulasi-kpr.html')">Copy URL</button></td>
-                </tr>
-
-                <tr>
-                    <td><strong>Hafalan Quran Tracker</strong></td>
-                    <td><code>com.hafalan.quran</code></td>
-                    <td><span class="category-badge">Education & Religion</span></td>
-                    <td><a href="hafalan-quran.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                    <td><button class="copy-btn" onclick="copyUrl('hafalan-quran.html')">Copy URL</button></td>
-                </tr>
-
-                <tr>
-                    <td><strong>Batik Nusantara Guide</strong></td>
-                    <td><code>com.batik.nusantara</code></td>
-                    <td><span class="category-badge">Lifestyle & Culture</span></td>
-                    <td><a href="batik-nusantara.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                    <td><button class="copy-btn" onclick="copyUrl('batik-nusantara.html')">Copy URL</button></td>
-                </tr>
-
-                <tr>
-                    <td><strong>Waroeng Ayam Tycoon</strong></td>
-                    <td><code>com.waroeng.ayam</code></td>
-                    <td><span class="category-badge">Casual Simulation Game</span></td>
-                    <td><a href="waroeng-ayam.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                    <td><button class="copy-btn" onclick="copyUrl('waroeng-ayam.html')">Copy URL</button></td>
-                </tr>
-
-                <tr>
-                    <td><strong>Word Connect Nusantara</strong></td>
-                    <td><code>com.wordconnect.nusantara</code></td>
-                    <td><span class="category-badge">Word Puzzle Game</span></td>
-                    <td><a href="word-connect.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                    <td><button class="copy-btn" onclick="copyUrl('word-connect.html')">Copy URL</button></td>
-                </tr>
-
-                <tr>
-                    <td><strong>Kalkulator Bunga Majemuk (Compounding)</strong></td>
-                    <td><code>com.compounding.calculator</code></td>
-                    <td><span class="category-badge">Finance & Tools</span></td>
-                    <td><a href="app-compounding.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                    <td><button class="copy-btn" onclick="copyUrl('app-compounding.html')">Copy URL</button></td>
-                </tr>
-
-                <tr>
-                    <td><strong>HitungYuk - Kalkulator Belanja</strong></td>
-                    <td><code>com.hitungyuk.app</code></td>
-                    <td><span class="category-badge">Finance & Shopping Tools</span></td>
-                    <td><a href="hitungyuk.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                    <td><button class="copy-btn" onclick="copyUrl('hitungyuk.html')">Copy URL</button></td>
-                </tr>
-
-            </tbody>
-        </table>
-
-        <div class="footer">
-            Maintained by Nusantara Mobile Studio &bull; Contact: <a
-                href="mailto:lencakstudio@gmail.com">lencakstudio@gmail.com</a>
-        </div>
+    <div class="footer">
+        Maintained by Nusantara Mobile Studio &bull; Contact: <a href="mailto:support@nusantarastudio.id">support@nusantarastudio.id</a>
     </div>
+</div>
 
-    <script>
-        function copyUrl(filename) {
-            const fullUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1) + filename;
-            navigator.clipboard.writeText(fullUrl).then(() => {
-                alert('Copied to clipboard: ' + fullUrl);
-            });
-        }
-    </script>
+<script>
+function copyUrl(filename) {
+    const fullUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1) + filename;
+    navigator.clipboard.writeText(fullUrl).then(() => {
+        alert('Copied to clipboard: ' + fullUrl);
+    });
+}
+</script>
 </body>
-
 </html>
