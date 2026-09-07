@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy Directory - Nusantara Mobile Studio</title>
-    <meta name="description" content="Official Privacy Policy Directory for Nusantara Mobile Studio Android Applications">
     <style>
         :root {
             --primary: #2563EB;
-            --primary-dark: #1D4ED8;
             --text-main: #0F172A;
             --text-muted: #64748B;
             --bg-page: #F8FAFC;
@@ -17,66 +15,26 @@
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background: var(--bg-page);
             color: var(--text-main);
             padding: 40px 20px;
-            line-height: 1.6;
         }
         .container {
-            max-width: 980px;
+            max-width: 960px;
             margin: 0 auto;
             background: var(--card-bg);
             padding: 40px;
             border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.02);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
             border: 1px solid var(--border);
         }
-        .header {
-            border-bottom: 2px solid var(--border);
-            padding-bottom: 20px;
-            margin-bottom: 24px;
-        }
-        h1 {
-            font-size: 26px;
-            font-weight: 800;
-            margin-bottom: 8px;
-            color: #0F172A;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        p { color: var(--text-muted); font-size: 15px; }
-
-        .search-box {
-            margin: 20px 0;
-            position: relative;
-        }
-        .search-input {
-            width: 100%;
-            padding: 12px 18px;
-            border-radius: 10px;
-            border: 1px solid var(--border);
-            font-size: 14.5px;
-            outline: none;
-            background: #F1F5F9;
-            transition: all 0.2s ease;
-        }
-        .search-input:focus {
-            background: #FFFFFF;
-            border-color: var(--primary);
-            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
-        }
-
-        .table-wrapper {
-            width: 100%;
-            overflow-x: auto;
-            -webkit-overflow-scrolling: touch;
-        }
+        h1 { font-size: 26px; font-weight: 800; margin-bottom: 8px; }
+        p { color: var(--text-muted); font-size: 15px; margin-bottom: 24px; }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 8px;
+            margin-top: 16px;
         }
         th, td {
             text-align: left;
@@ -96,512 +54,298 @@
             display: inline-block;
             background: #EFF6FF;
             color: #1D4ED8;
-            padding: 4px 10px;
+            padding: 3px 8px;
             border-radius: 6px;
             font-size: 12px;
             font-weight: 600;
-            white-space: nowrap;
         }
         .view-link {
             color: var(--primary);
             text-decoration: none;
             font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
         }
         .view-link:hover { text-decoration: underline; }
         .copy-btn {
             background: #0F172A;
             color: #FFF;
             border: none;
-            padding: 8px 14px;
+            padding: 6px 12px;
             border-radius: 6px;
-            font-size: 12.5px;
+            font-size: 12px;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s;
-            white-space: nowrap;
         }
         .copy-btn:hover { background: #1E293B; }
-        .copy-btn:active { transform: scale(0.96); }
-        
-        /* Load More Styles */
-        .load-more-wrap {
-            margin-top: 24px;
-            text-align: center;
-        }
-        .btn-load-more {
-            background: #EFF6FF;
-            color: #1D4ED8;
-            border: 1px solid #BFDBFE;
-            padding: 12px 24px;
-            border-radius: 10px;
-            font-size: 14px;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-        .btn-load-more:hover {
-            background: #DBEAFE;
-            border-color: #93C5FD;
-            transform: translateY(-1px);
-        }
-        .btn-load-more:active {
-            transform: translateY(0);
-        }
-        .count-pill {
-            background: #1D4ED8;
-            color: #FFFFFF;
-            font-size: 11px;
-            font-weight: 800;
-            padding: 2px 8px;
-            border-radius: 99px;
-        }
-
         .footer {
             margin-top: 36px;
             text-align: center;
             font-size: 13px;
             color: var(--text-muted);
-            line-height: 1.6;
         }
         code {
             background: #F1F5F9;
-            padding: 3px 7px;
-            border-radius: 6px;
+            padding: 2px 6px;
+            border-radius: 4px;
             font-size: 13px;
             color: #D97706;
-            word-break: break-all;
-        }
-
-        /* Mobile Responsive Optimizations */
-        @media (max-width: 768px) {
-            body {
-                padding: 12px 8px;
-            }
-            .container {
-                padding: 20px 14px;
-                border-radius: 12px;
-            }
-            h1 {
-                font-size: 20px;
-            }
-            p {
-                font-size: 13.5px;
-            }
-            .search-input {
-                padding: 10px 14px;
-                font-size: 14px;
-            }
-
-            /* Responsive Card Transformation on Mobile */
-            table, thead, tbody, th, td, tr {
-                display: block;
-                width: 100%;
-            }
-            thead {
-                display: none;
-            }
-            tr {
-                background: #FFFFFF;
-                border: 1px solid var(--border);
-                border-radius: 14px;
-                margin-bottom: 16px;
-                padding: 16px;
-                box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-            }
-            
-            /* First Cell: App Name (Header of the Card) */
-            td:first-child {
-                display: block !important;
-                font-size: 17px;
-                font-weight: 700;
-                color: #0F172A;
-                padding: 0 0 10px 0 !important;
-                border-bottom: 1px solid #F1F5F9 !important;
-                margin-bottom: 10px;
-                line-height: 1.3;
-            }
-            td:first-child::before {
-                content: "APP NAME";
-                display: block;
-                font-size: 10px;
-                font-weight: 700;
-                color: #94A3B8;
-                text-transform: uppercase;
-                letter-spacing: 0.5px;
-                margin-bottom: 3px;
-            }
-
-            /* Detail Cells: Package Name & Category */
-            td[data-label="Package Name"],
-            td[data-label="Category"] {
-                border-bottom: none;
-                padding: 6px 0;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 12px;
-                font-size: 13.5px;
-            }
-            td[data-label="Package Name"]::before,
-            td[data-label="Category"]::before {
-                content: attr(data-label);
-                font-weight: 700;
-                color: #64748B;
-                font-size: 11px;
-                text-transform: uppercase;
-                letter-spacing: 0.5px;
-                flex-shrink: 0;
-            }
-
-            /* Action Buttons Row */
-            td[data-label="Privacy Policy"],
-            td[data-label="Action"] {
-                display: inline-block !important;
-                width: calc(50% - 6px) !important;
-                padding: 0 !important;
-                margin-top: 12px;
-                border-bottom: none !important;
-            }
-            td[data-label="Privacy Policy"] {
-                margin-right: 8px;
-            }
-            td[data-label="Privacy Policy"]::before,
-            td[data-label="Action"]::before {
-                display: none !important;
-            }
-            .view-link, .copy-btn {
-                width: 100% !important;
-                height: 42px;
-                display: flex !important;
-                align-items: center;
-                justify-content: center;
-                padding: 0 10px !important;
-                border-radius: 8px !important;
-                font-size: 13px !important;
-                font-weight: 600;
-                box-sizing: border-box;
-            }
-            .view-link {
-                background: #EFF6FF;
-                border: 1px solid #BFDBFE;
-                color: #1D4ED8;
-            }
-            .copy-btn {
-                background: #0F172A;
-                color: #FFFFFF;
-            }
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <div class="header">
-        <h1>🛡️ Google Play Privacy Policy Directory</h1>
-        <p>Official Privacy Policy repository for Nusantara Mobile Studio applications.</p>
-    </div>
+    <h1>🛡️ Google Play Privacy Policy Directory</h1>
+    <p>Official Privacy Policy repository for Nusantara Mobile Studio. Host this directory on GitHub Pages or custom domain.</p>
 
-    <div class="search-box">
-        <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search app name or package name..." onkeyup="onSearchChange()">
-    </div>
-
-    <div class="table-wrapper">
-        <table>
-            <thead>
-                <tr>
-                    <th>App Name</th>
-                    <th>Package Name</th>
-                    <th>Category</th>
-                    <th>Privacy Policy</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody id="appTableBody">
-            <tr class="app-row" data-name="badminton smash indonesia" data-pkg="com.badminton.smash">
-                <td data-label="App Name"><strong>Badminton Smash Indonesia</strong></td>
-                <td data-label="Package Name"><code>com.badminton.smash</code></td>
-                <td data-label="Category"><span class="category-badge">Casual Arcade Game</span></td>
-                <td data-label="Privacy Policy"><a href="badminton.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('badminton.html')">Copy URL</button></td>
+    <table>
+        <thead>
+            <tr>
+                <th>App Name</th>
+                <th>Package Name</th>
+                <th>Category</th>
+                <th>Privacy Policy</th>
+                <th>Action</th>
             </tr>
-            <tr class="app-row" data-name="ojek racer indonesia" data-pkg="com.ojekracer.game">
-                <td data-label="App Name"><strong>Ojek Racer Indonesia</strong></td>
-                <td data-label="Package Name"><code>com.ojekracer.game</code></td>
-                <td data-label="Category"><span class="category-badge">Racing Arcade Game</span></td>
-                <td data-label="Privacy Policy"><a href="ojek-racer.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('ojek-racer.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="simulasi kpr &amp; finansial" data-pkg="com.kpr.simulasi">
-                <td data-label="App Name"><strong>Simulasi KPR &amp; Finansial</strong></td>
-                <td data-label="Package Name"><code>com.kpr.simulasi</code></td>
-                <td data-label="Category"><span class="category-badge">Finance &amp; Productivity</span></td>
-                <td data-label="Privacy Policy"><a href="simulasi-kpr.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('simulasi-kpr.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="hafalan quran tracker" data-pkg="com.hafalan.quran">
-                <td data-label="App Name"><strong>Hafalan Quran Tracker</strong></td>
-                <td data-label="Package Name"><code>com.hafalan.quran</code></td>
-                <td data-label="Category"><span class="category-badge">Education &amp; Religion</span></td>
-                <td data-label="Privacy Policy"><a href="hafalan-quran.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('hafalan-quran.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="batik nusantara guide" data-pkg="com.batik.nusantara">
-                <td data-label="App Name"><strong>Batik Nusantara Guide</strong></td>
-                <td data-label="Package Name"><code>com.batik.nusantara</code></td>
-                <td data-label="Category"><span class="category-badge">Lifestyle &amp; Culture</span></td>
-                <td data-label="Privacy Policy"><a href="batik-nusantara.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('batik-nusantara.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="waroeng ayam tycoon" data-pkg="com.waroeng.ayam">
-                <td data-label="App Name"><strong>Waroeng Ayam Tycoon</strong></td>
-                <td data-label="Package Name"><code>com.waroeng.ayam</code></td>
-                <td data-label="Category"><span class="category-badge">Casual Simulation Game</span></td>
-                <td data-label="Privacy Policy"><a href="waroeng-ayam.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('waroeng-ayam.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="word connect nusantara" data-pkg="com.wordconnect.nusantara">
-                <td data-label="App Name"><strong>Word Connect Nusantara</strong></td>
-                <td data-label="Package Name"><code>com.wordconnect.nusantara</code></td>
-                <td data-label="Category"><span class="category-badge">Word Puzzle Game</span></td>
-                <td data-label="Privacy Policy"><a href="word-connect.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('word-connect.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="buku tabungan bunga majemuk" data-pkg="com.compounding.tracker">
-                <td data-label="App Name"><strong>Buku Tabungan Bunga Majemuk</strong></td>
-                <td data-label="Package Name"><code>com.compounding.tracker</code></td>
-                <td data-label="Category"><span class="category-badge">Finance &amp; Tools</span></td>
-                <td data-label="Privacy Policy"><a href="app-compounding.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('app-compounding.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="hitungyuk - kalkulator belanja" data-pkg="com.hitungyuk.app">
-                <td data-label="App Name"><strong>HitungYuk - Kalkulator Belanja</strong></td>
-                <td data-label="Package Name"><code>com.hitungyuk.app</code></td>
-                <td data-label="Category"><span class="category-badge">Finance &amp; Shopping Tools</span></td>
-                <td data-label="Privacy Policy"><a href="hitungyuk.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('hitungyuk.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="nusantara mobile studio (companion app)" data-pkg="com.nusantara.mobilestudio">
-                <td data-label="App Name"><strong>Nusantara Mobile Studio (Companion App)</strong></td>
-                <td data-label="Package Name"><code>com.nusantara.mobilestudio</code></td>
-                <td data-label="Category"><span class="category-badge">Productivity &amp; Portfolio Showcase</span></td>
-                <td data-label="Privacy Policy"><a href="nusantara-mobile-studio.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('nusantara-mobile-studio.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="focusflow pomodoro &amp; task" data-pkg="com.nusantara.focusflow">
-                <td data-label="App Name"><strong>FocusFlow Pomodoro &amp; Task</strong></td>
-                <td data-label="Package Name"><code>com.nusantara.focusflow</code></td>
-                <td data-label="Category"><span class="category-badge">Tools &amp; Productivity</span></td>
-                <td data-label="Privacy Policy"><a href="focusflow.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('focusflow.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="budgetwise expense tracker" data-pkg="com.nusantara.budgetwise">
-                <td data-label="App Name"><strong>BudgetWise Expense Tracker</strong></td>
-                <td data-label="Package Name"><code>com.nusantara.budgetwise</code></td>
-                <td data-label="Category"><span class="category-badge">Finance &amp; Budgeting</span></td>
-                <td data-label="Privacy Policy"><a href="budgetwise.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('budgetwise.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="zenpulse breath &amp; habit" data-pkg="com.nusantara.zenpulse">
-                <td data-label="App Name"><strong>ZenPulse Breath &amp; Habit</strong></td>
-                <td data-label="Package Name"><code>com.nusantara.zenpulse</code></td>
-                <td data-label="Category"><span class="category-badge">Health &amp; Mindfulness</span></td>
-                <td data-label="Privacy Policy"><a href="zenpulse.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('zenpulse.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="pixel odyssey: void runner" data-pkg="com.nusantara.pixelodyssey">
-                <td data-label="App Name"><strong>Pixel Odyssey: Void Runner</strong></td>
-                <td data-label="Package Name"><code>com.nusantara.pixelodyssey</code></td>
-                <td data-label="Category"><span class="category-badge">Arcade &amp; Action Game</span></td>
-                <td data-label="Privacy Policy"><a href="pixel-odyssey.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('pixel-odyssey.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="aksara: interactive nusantara" data-pkg="com.nusantara.aksara">
-                <td data-label="App Name"><strong>Aksara: Interactive Nusantara</strong></td>
-                <td data-label="Package Name"><code>com.nusantara.aksara</code></td>
-                <td data-label="Category"><span class="category-badge">Education &amp; Culture</span></td>
-                <td data-label="Privacy Policy"><a href="aksara.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('aksara.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="vibejournal mood &amp; routine" data-pkg="com.nusantara.vibejournal">
-                <td data-label="App Name"><strong>VibeJournal Mood &amp; Routine</strong></td>
-                <td data-label="Package Name"><code>com.nusantara.vibejournal</code></td>
-                <td data-label="Category"><span class="category-badge">Lifestyle &amp; Wellness</span></td>
-                <td data-label="Privacy Policy"><a href="vibejournal.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('vibejournal.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="kalkulator kehamilan &amp; anak" data-pkg="com.kalkulatorhplanak.app">
-                <td data-label="App Name"><strong>Kalkulator Kehamilan &amp; Anak</strong></td>
-                <td data-label="Package Name"><code>com.kalkulatorhplanak.app</code></td>
-                <td data-label="Category"><span class="category-badge">Health &amp; Parenting Tools</span></td>
-                <td data-label="Privacy Policy"><a href="kalkulator-kehamilan-anak.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('kalkulator-kehamilan-anak.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="jadwal sholat &amp; kiblat" data-pkg="com.jadwalsholat.adzan.kiblat">
-                <td data-label="App Name"><strong>Jadwal Sholat &amp; Kiblat</strong></td>
-                <td data-label="Package Name"><code>com.jadwalsholat.adzan.kiblat</code></td>
-                <td data-label="Category"><span class="category-badge">Religion &amp; Lifestyle</span></td>
-                <td data-label="Privacy Policy"><a href="jadwal-sholat-kiblat.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('jadwal-sholat-kiblat.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="kalkulator zakat &amp; waris" data-pkg="com.zakatwaris.app">
-                <td data-label="App Name"><strong>Kalkulator Zakat &amp; Waris</strong></td>
-                <td data-label="Package Name"><code>com.zakatwaris.app</code></td>
-                <td data-label="Category"><span class="category-badge">Religion &amp; Finance Tools</span></td>
-                <td data-label="Privacy Policy"><a href="kalkulator-zakat-waris.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('kalkulator-zakat-waris.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="lempar cakram nusantara" data-pkg="com.cakramnusantara">
-                <td data-label="App Name"><strong>Lempar Cakram Nusantara</strong></td>
-                <td data-label="Package Name"><code>com.cakramnusantara</code></td>
-                <td data-label="Category"><span class="category-badge">Casual Arcade Game</span></td>
-                <td data-label="Privacy Policy"><a href="lempar-cakram-nusantara.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('lempar-cakram-nusantara.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="kalkulator listrik" data-pkg="com.kalkulatortoken.listrik">
-                <td data-label="App Name"><strong>Kalkulator Listrik</strong></td>
-                <td data-label="Package Name"><code>com.kalkulatortoken.listrik</code></td>
-                <td data-label="Category"><span class="category-badge">Utilities &amp; Tools</span></td>
-                <td data-label="Privacy Policy"><a href="kalkulator-listrik.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('kalkulator-listrik.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="kalender jawa" data-pkg="com.kalenderjawa.app">
-                <td data-label="App Name"><strong>Kalender Jawa</strong></td>
-                <td data-label="Package Name"><code>com.kalenderjawa.app</code></td>
-                <td data-label="Category"><span class="category-badge">Lifestyle &amp; Culture</span></td>
-                <td data-label="Privacy Policy"><a href="kalender-jawa.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('kalender-jawa.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="harga emas &amp; kalkulator" data-pkg="com.hargaemas.kalkulatoremas">
-                <td data-label="App Name"><strong>Harga Emas &amp; Kalkulator</strong></td>
-                <td data-label="Package Name"><code>com.hargaemas.kalkulatoremas</code></td>
-                <td data-label="Category"><span class="category-badge">Finance &amp; Tools</span></td>
-                <td data-label="Privacy Policy"><a href="kalkulator-emas.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('kalkulator-emas.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="scancode device profile" data-pkg="com.scancode.device">
-                <td data-label="App Name"><strong>ScanCode Device Profile</strong></td>
-                <td data-label="Package Name"><code>com.scancode.device</code></td>
-                <td data-label="Category"><span class="category-badge">Tools &amp; Productivity</span></td>
-                <td data-label="Privacy Policy"><a href="scancode-device.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('scancode-device.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="konverter satuan masak" data-pkg="com.konvertersatuan.app">
-                <td data-label="App Name"><strong>Konverter Satuan Masak</strong></td>
-                <td data-label="Package Name"><code>com.konvertersatuan.app</code></td>
-                <td data-label="Category"><span class="category-badge">Food &amp; Culinary Tools</span></td>
-                <td data-label="Privacy Policy"><a href="konverter-satuan.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('konverter-satuan.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="jadwal sholat lengkap" data-pkg="com.jadwalsholat.lengkap">
-                <td data-label="App Name"><strong>Jadwal Sholat Lengkap</strong></td>
-                <td data-label="Package Name"><code>com.jadwalsholat.lengkap</code></td>
-                <td data-label="Category"><span class="category-badge">Religion &amp; Lifestyle</span></td>
-                <td data-label="Privacy Policy"><a href="jadwal-sholat-lengkap.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('jadwal-sholat-lengkap.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="generate lamaran kerja" data-pkg="com.nusantara.lamarankerja">
-                <td data-label="App Name"><strong>Generate Lamaran Kerja</strong></td>
-                <td data-label="Package Name"><code>com.nusantara.lamarankerja</code></td>
-                <td data-label="Category"><span class="category-badge">Productivity &amp; Career Tools</span></td>
-                <td data-label="Privacy Policy"><a href="generate-lamaran-kerja.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('generate-lamaran-kerja.html')">Copy URL</button></td>
-            </tr>
-            <tr class="app-row" data-name="scansign - document scanner" data-pkg="com.scansign.app">
-                <td data-label="App Name"><strong>ScanSign - Document Scanner</strong></td>
-                <td data-label="Package Name"><code>com.scansign.app</code></td>
-                <td data-label="Category"><span class="category-badge">Productivity &amp; Document Tools</span></td>
-                <td data-label="Privacy Policy"><a href="scansign-document-scanner.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
-                <td data-label="Action"><button class="copy-btn" onclick="copyUrl('scansign-document-scanner.html')">Copy URL</button></td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-    <div class="load-more-wrap" id="loadMoreWrap">
-        <button class="btn-load-more" onclick="loadMoreApps()">
-            <span>Show More Policies</span>
-            <span class="count-pill" id="loadMorePill"></span>
-        </button>
-    </div>
+        </thead>
+        <tbody>
+            
+        <tr>
+            <td><strong>Badminton Smash Indonesia</strong></td>
+            <td><code>com.badminton.smash</code></td>
+            <td><span class="category-badge">Casual Arcade Game</span></td>
+            <td><a href="badminton.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('badminton.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Ojek Racer Indonesia</strong></td>
+            <td><code>com.ojekracer.game</code></td>
+            <td><span class="category-badge">Racing Arcade Game</span></td>
+            <td><a href="ojek-racer.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('ojek-racer.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Simulasi KPR & Finansial</strong></td>
+            <td><code>com.kpr.simulasi</code></td>
+            <td><span class="category-badge">Finance & Productivity</span></td>
+            <td><a href="simulasi-kpr.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('simulasi-kpr.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Hafalan Quran Tracker</strong></td>
+            <td><code>com.hafalan.quran</code></td>
+            <td><span class="category-badge">Education & Religion</span></td>
+            <td><a href="hafalan-quran.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('hafalan-quran.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Batik Nusantara Guide</strong></td>
+            <td><code>com.batik.nusantara</code></td>
+            <td><span class="category-badge">Lifestyle & Culture</span></td>
+            <td><a href="batik-nusantara.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('batik-nusantara.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Waroeng Ayam Tycoon</strong></td>
+            <td><code>com.waroeng.ayam</code></td>
+            <td><span class="category-badge">Casual Simulation Game</span></td>
+            <td><a href="waroeng-ayam.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('waroeng-ayam.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Word Connect Nusantara</strong></td>
+            <td><code>com.wordconnect.nusantara</code></td>
+            <td><span class="category-badge">Word Puzzle Game</span></td>
+            <td><a href="word-connect.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('word-connect.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Buku Tabungan Bunga Majemuk</strong></td>
+            <td><code>com.compounding.tracker</code></td>
+            <td><span class="category-badge">Finance & Tools</span></td>
+            <td><a href="app-compounding.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('app-compounding.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>HitungYuk - Kalkulator Belanja</strong></td>
+            <td><code>com.hitungyuk.app</code></td>
+            <td><span class="category-badge">Finance & Shopping Tools</span></td>
+            <td><a href="hitungyuk.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('hitungyuk.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Nusantara Mobile Studio (Companion App)</strong></td>
+            <td><code>com.nusantara.mobilestudio</code></td>
+            <td><span class="category-badge">Productivity & Portfolio Showcase</span></td>
+            <td><a href="nusantara-mobile-studio.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('nusantara-mobile-studio.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>FocusFlow Pomodoro & Task</strong></td>
+            <td><code>com.nusantara.focusflow</code></td>
+            <td><span class="category-badge">Tools & Productivity</span></td>
+            <td><a href="focusflow.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('focusflow.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>BudgetWise Expense Tracker</strong></td>
+            <td><code>com.nusantara.budgetwise</code></td>
+            <td><span class="category-badge">Finance & Budgeting</span></td>
+            <td><a href="budgetwise.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('budgetwise.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>ZenPulse Breath & Habit</strong></td>
+            <td><code>com.nusantara.zenpulse</code></td>
+            <td><span class="category-badge">Health & Mindfulness</span></td>
+            <td><a href="zenpulse.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('zenpulse.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Pixel Odyssey: Void Runner</strong></td>
+            <td><code>com.nusantara.pixelodyssey</code></td>
+            <td><span class="category-badge">Arcade & Action Game</span></td>
+            <td><a href="pixel-odyssey.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('pixel-odyssey.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Aksara: Interactive Nusantara</strong></td>
+            <td><code>com.nusantara.aksara</code></td>
+            <td><span class="category-badge">Education & Culture</span></td>
+            <td><a href="aksara.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('aksara.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>VibeJournal Mood & Routine</strong></td>
+            <td><code>com.nusantara.vibejournal</code></td>
+            <td><span class="category-badge">Lifestyle & Wellness</span></td>
+            <td><a href="vibejournal.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('vibejournal.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Kalkulator Kehamilan & Anak</strong></td>
+            <td><code>com.kalkulatorhplanak.app</code></td>
+            <td><span class="category-badge">Health & Parenting Tools</span></td>
+            <td><a href="kalkulator-kehamilan-anak.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('kalkulator-kehamilan-anak.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Jadwal Sholat & Kiblat</strong></td>
+            <td><code>com.jadwalsholat.adzan.kiblat</code></td>
+            <td><span class="category-badge">Religion & Lifestyle</span></td>
+            <td><a href="jadwal-sholat-kiblat.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('jadwal-sholat-kiblat.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Kalkulator Zakat & Waris</strong></td>
+            <td><code>com.zakatwaris.app</code></td>
+            <td><span class="category-badge">Religion & Finance Tools</span></td>
+            <td><a href="kalkulator-zakat-waris.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('kalkulator-zakat-waris.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Lempar Cakram Nusantara</strong></td>
+            <td><code>com.cakramnusantara</code></td>
+            <td><span class="category-badge">Casual Arcade Game</span></td>
+            <td><a href="lempar-cakram-nusantara.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('lempar-cakram-nusantara.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Kalkulator Listrik</strong></td>
+            <td><code>com.kalkulatortoken.listrik</code></td>
+            <td><span class="category-badge">Utilities & Tools</span></td>
+            <td><a href="kalkulator-listrik.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('kalkulator-listrik.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Kalender Jawa</strong></td>
+            <td><code>com.kalenderjawa.app</code></td>
+            <td><span class="category-badge">Lifestyle & Culture</span></td>
+            <td><a href="kalender-jawa.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('kalender-jawa.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Harga Emas & Kalkulator</strong></td>
+            <td><code>com.hargaemas.kalkulatoremas</code></td>
+            <td><span class="category-badge">Finance & Tools</span></td>
+            <td><a href="kalkulator-emas.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('kalkulator-emas.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>ScanCode Device Profile</strong></td>
+            <td><code>com.scancode.device</code></td>
+            <td><span class="category-badge">Tools & Productivity</span></td>
+            <td><a href="scancode-device.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('scancode-device.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Buku Pintar Dapur & Resep</strong></td>
+            <td><code>com.konvertersatuan.app</code></td>
+            <td><span class="category-badge">Food & Culinary Tools</span></td>
+            <td><a href="buku-pintar-dapur-resep.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('buku-pintar-dapur-resep.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Jadwal Sholat Lengkap</strong></td>
+            <td><code>com.jadwalsholat.lengkap</code></td>
+            <td><span class="category-badge">Religion & Lifestyle</span></td>
+            <td><a href="jadwal-sholat-lengkap.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('jadwal-sholat-lengkap.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>Generate Lamaran Kerja</strong></td>
+            <td><code>com.nusantara.lamarankerja</code></td>
+            <td><span class="category-badge">Productivity & Career Tools</span></td>
+            <td><a href="lamaran-kerja.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('lamaran-kerja.html')">Copy URL</button></td>
+        </tr>
+        
+        <tr>
+            <td><strong>ScanSign - Document Scanner</strong></td>
+            <td><code>com.scansign.app</code></td>
+            <td><span class="category-badge">Productivity & Document Tools</span></td>
+            <td><a href="office-doc-scanner.html" class="view-link" target="_blank">View Policy &rarr;</a></td>
+            <td><button class="copy-btn" onclick="copyUrl('office-doc-scanner.html')">Copy URL</button></td>
+        </tr>
+        
+        </tbody>
+    </table>
 
     <div class="footer">
-        Maintained by <strong>Nusantara Mobile Studio</strong> &bull; Contact: <a href="mailto:lencakstudio@gmail.com">lencakstudio@gmail.com</a> &bull; Phone / WA: <a href="https://wa.me/6285655268945" target="_blank" rel="noopener">+62 856-5526-8945</a><br>
-        Website: <a href="https://holisahmad.github.io/nusantaramobilestudio/" target="_blank" rel="noopener">https://holisahmad.github.io/nusantaramobilestudio/</a>
+        Maintained by Nusantara Mobile Studio &bull; Contact: <a href="mailto:lencakstudio@gmail.com">lencakstudio@gmail.com</a>
     </div>
 </div>
 
 <script>
-const INITIAL_LIMIT = 10;
-const STEP_LIMIT = 10;
-let currentLimit = INITIAL_LIMIT;
-
-document.addEventListener('DOMContentLoaded', () => {
-    renderRows();
-});
-
-function renderRows() {
-    const query = document.getElementById('searchInput').value.toLowerCase().trim();
-    const rows = Array.from(document.querySelectorAll('.app-row'));
-    const loadMoreWrap = document.getElementById('loadMoreWrap');
-    const loadMorePill = document.getElementById('loadMorePill');
-
-    if (query !== '') {
-        // Searching mode: show all matching rows, hide Load More
-        let matchCount = 0;
-        rows.forEach(row => {
-            const name = row.getAttribute('data-name') || '';
-            const pkg = row.getAttribute('data-pkg') || '';
-            if (name.includes(query) || pkg.includes(query)) {
-                row.style.display = '';
-                matchCount++;
-            } else {
-                row.style.display = 'none';
-            }
-        });
-        loadMoreWrap.style.display = 'none';
-    } else {
-        // Normal pagination mode
-        let visibleCount = 0;
-        rows.forEach((row, index) => {
-            if (index < currentLimit) {
-                row.style.display = '';
-                visibleCount++;
-            } else {
-                row.style.display = 'none';
-            }
-        });
-
-        const remaining = rows.length - currentLimit;
-        if (remaining > 0) {
-            loadMoreWrap.style.display = 'block';
-            loadMorePill.textContent = '+' + remaining;
-        } else {
-            loadMoreWrap.style.display = 'none';
-        }
-    }
-}
-
-function loadMoreApps() {
-    currentLimit += STEP_LIMIT;
-    renderRows();
-}
-
-function onSearchChange() {
-    renderRows();
-}
-
 function copyUrl(filename) {
-    const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
-    const fullUrl = baseUrl + filename;
+    const fullUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1) + filename;
     navigator.clipboard.writeText(fullUrl).then(() => {
-        alert('Copied Privacy Policy URL:\n' + fullUrl);
-    }).catch(() => {
-        prompt('Copy this Privacy Policy URL:', fullUrl);
+        alert('Copied to clipboard: ' + fullUrl);
     });
 }
 </script>
