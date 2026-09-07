@@ -126,6 +126,42 @@
         .copy-btn:hover { background: #1E293B; }
         .copy-btn:active { transform: scale(0.96); }
         
+        /* Load More Styles */
+        .load-more-wrap {
+            margin-top: 24px;
+            text-align: center;
+        }
+        .btn-load-more {
+            background: #EFF6FF;
+            color: #1D4ED8;
+            border: 1px solid #BFDBFE;
+            padding: 12px 24px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-load-more:hover {
+            background: #DBEAFE;
+            border-color: #93C5FD;
+            transform: translateY(-1px);
+        }
+        .btn-load-more:active {
+            transform: translateY(0);
+        }
+        .count-pill {
+            background: #1D4ED8;
+            color: #FFFFFF;
+            font-size: 11px;
+            font-weight: 800;
+            padding: 2px 8px;
+            border-radius: 99px;
+        }
+
         .footer {
             margin-top: 36px;
             text-align: center;
@@ -271,7 +307,7 @@
     </div>
 
     <div class="search-box">
-        <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search app name or package name..." onkeyup="filterApps()">
+        <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search app name or package name..." onkeyup="onSearchChange()">
     </div>
 
     <div class="table-wrapper">
@@ -486,6 +522,13 @@
         </table>
     </div>
 
+    <div class="load-more-wrap" id="loadMoreWrap">
+        <button class="btn-load-more" onclick="loadMoreApps()">
+            <span>Show More Policies</span>
+            <span class="count-pill" id="loadMorePill"></span>
+        </button>
+    </div>
+
     <div class="footer">
         Maintained by <strong>Nusantara Mobile Studio</strong> &bull; Contact: <a href="mailto:lencakstudio@gmail.com">lencakstudio@gmail.com</a> &bull; Phone / WA: <a href="https://wa.me/6285655268945" target="_blank" rel="noopener">+62 856-5526-8945</a><br>
         Website: <a href="https://holisahmad.github.io/nusantaramobilestudio/" target="_blank" rel="noopener">https://holisahmad.github.io/nusantaramobilestudio/</a>
@@ -493,6 +536,65 @@
 </div>
 
 <script>
+const INITIAL_LIMIT = 10;
+const STEP_LIMIT = 10;
+let currentLimit = INITIAL_LIMIT;
+
+document.addEventListener('DOMContentLoaded', () => {
+    renderRows();
+});
+
+function renderRows() {
+    const query = document.getElementById('searchInput').value.toLowerCase().trim();
+    const rows = Array.from(document.querySelectorAll('.app-row'));
+    const loadMoreWrap = document.getElementById('loadMoreWrap');
+    const loadMorePill = document.getElementById('loadMorePill');
+
+    if (query !== '') {
+        // Searching mode: show all matching rows, hide Load More
+        let matchCount = 0;
+        rows.forEach(row => {
+            const name = row.getAttribute('data-name') || '';
+            const pkg = row.getAttribute('data-pkg') || '';
+            if (name.includes(query) || pkg.includes(query)) {
+                row.style.display = '';
+                matchCount++;
+            } else {
+                row.style.display = 'none';
+            }
+        });
+        loadMoreWrap.style.display = 'none';
+    } else {
+        // Normal pagination mode
+        let visibleCount = 0;
+        rows.forEach((row, index) => {
+            if (index < currentLimit) {
+                row.style.display = '';
+                visibleCount++;
+            } else {
+                row.style.display = 'none';
+            }
+        });
+
+        const remaining = rows.length - currentLimit;
+        if (remaining > 0) {
+            loadMoreWrap.style.display = 'block';
+            loadMorePill.textContent = '+' + remaining;
+        } else {
+            loadMoreWrap.style.display = 'none';
+        }
+    }
+}
+
+function loadMoreApps() {
+    currentLimit += STEP_LIMIT;
+    renderRows();
+}
+
+function onSearchChange() {
+    renderRows();
+}
+
 function copyUrl(filename) {
     const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
     const fullUrl = baseUrl + filename;
@@ -500,20 +602,6 @@ function copyUrl(filename) {
         alert('Copied Privacy Policy URL:\n' + fullUrl);
     }).catch(() => {
         prompt('Copy this Privacy Policy URL:', fullUrl);
-    });
-}
-
-function filterApps() {
-    const query = document.getElementById('searchInput').value.toLowerCase().trim();
-    const rows = document.querySelectorAll('.app-row');
-    rows.forEach(row => {
-        const name = row.getAttribute('data-name') || '';
-        const pkg = row.getAttribute('data-pkg') || '';
-        if (name.includes(query) || pkg.includes(query)) {
-            row.style.display = '';
-        } else {
-            row.style.display = 'none';
-        }
     });
 }
 </script>
